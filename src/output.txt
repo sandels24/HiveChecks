@@ -1,0 +1,1318 @@
+[main] WARN org.apache.hadoop.util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: Hadoop bin directory does not exist: C:\hadoop\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:569)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:553)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:650)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.security.SecurityUtil.getAuthenticationMethod(SecurityUtil.java:686)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:303)
+	at org.apache.hadoop.security.UserGroupInformation.setConfiguration(UserGroupInformation.java:352)
+	at com.apporchid.hive.HiveDriver.connect(HiveDriver.java:49)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at HiveConnection.getConnection(HiveConnection.java:35)
+	at MainClass.main(MainClass.java:14)
+[main] INFO org.apache.hive.jdbc.Utils - Supplied authorities: staplhdpsm002.amwater.net:2181,staplhdpsm005.amwater.net:2181,staplhdpsm006.amwater.net:2181,staplhdpsm003.amwater.net:2181,staplhdpsm004.amwater.net:2181
+[main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-129--1, built on 05/31/2017 03:01 GMT
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:host.name=NJS-LS-TLXM.amwater.net
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_191
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.home=C:\Program Files\Java\jdk1.8.0_191\jre
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=C:\Users\sandels\Documents\workspace\HiveDataChecks\target\classes;C:\programs\Hive\driver\aoHiveDriver.jar;C:\programs\Hive\driver\hive-jdbc-uber-2.6.1.0-129.jar;C:\Users\sandels\.m2\repository\org\apache\poi\poi-ooxml\3.15\poi-ooxml-3.15.jar;C:\Users\sandels\.m2\repository\org\apache\poi\poi\3.15\poi-3.15.jar;C:\Users\sandels\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\sandels\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\Users\sandels\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.15\poi-ooxml-schemas-3.15.jar;C:\Users\sandels\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Users\sandels\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\sandels\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\Users\sandels\.m2\repository\org\jasypt\jasypt\1.9.2\jasypt-1.9.2.jar
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\hadoop\bin;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Users\sandels\AppData\Local\Microsoft\WindowsApps;C:\hadoop\bin;;C:\Users\sandels\Desktop\STS\sts-4.0.0.RELEASE;;.
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=C:\Users\sandels\AppData\Local\Temp\
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.name=Windows 10
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.0
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.name=SANDELS
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\sandels
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.dir=C:\Users\sandels\Documents\workspace\HiveDataChecks
+[main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=staplhdpsm002.amwater.net:2181,staplhdpsm005.amwater.net:2181,staplhdpsm006.amwater.net:2181,staplhdpsm003.amwater.net:2181,staplhdpsm004.amwater.net:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@6d3af739
+[main-SendThread(10.3.22.12:2181)] WARN org.apache.zookeeper.ClientCnxn - SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: 'C:\programs\Hive\prod\jaas.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it.
+[main-SendThread(10.3.22.12:2181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server 10.3.22.12/10.3.22.12:2181
+[main-EventThread] ERROR org.apache.curator.ConnectionState - Authentication failed
+[main-SendThread(10.3.22.12:2181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to 10.3.22.12/10.3.22.12:2181, initiating session
+[main-SendThread(10.3.22.12:2181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server 10.3.22.12/10.3.22.12:2181, sessionid = 0x266bed4de0c0082, negotiated timeout = 60000
+[main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+[main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x266bed4de0c0082 closed
+[main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+[main] INFO org.apache.hive.jdbc.Utils - Resolved authority: staplhdpsm005.amwater.net:10001
+Connection Created
+Enter column name
+Enter table name
+CBRI_SONDE_CHLR                                                             DOESNOT EXISTS - in Excel
+CBRI_SONDE_COND                                                             DOESNOT EXISTS - in Excel
+CBRI_SONDE_DPTH                                                             DOESNOT EXISTS - in Excel
+CBRI_SONDE_NH4                                                              DOESNOT EXISTS - in Excel
+CBRI_SONDE_NO3                                                              DOESNOT EXISTS - in Excel
+CBRI_SONDE_SALI                                                             DOESNOT EXISTS - in Excel
+CBRI_SONDE_TDS                                                              DOESNOT EXISTS - in Excel
+CBRI_SONDE_TEMP                                                             DOESNOT EXISTS - in Excel
+Finished Water/CB_BWS_FIT6503                                               DOESNOT EXISTS - in Excel
+Finished Water/CB_BWS_FIT6531                                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:CHLO:CHLORINESCALE1_WEIGHT                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:CHLO:CHLORINESCALE2_WEIGHT                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:CHLO:CHLORINE_CONTACTTIME                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:CHLO:CHLORINE_CONTACTTIMERATION                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:CORR:CORROSIONINHIBDAYTANK_LEVEL                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:CORR:CORROSIONINHIBPUMP_FEEDRATE                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:CORR:CORROSIONINHIBSTORAGETANK_LEVEL                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:CORR:CORROSIONINHIBTANK_FEEDRATE                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:CORR:CORROSIONINHIBTANK_LEVEL                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:DIST:DieselFuelTank1_Volume                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:DieselFuelTank2_Volume                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HIGHSERVICEMAIN_FLOW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:DIST:HIGHSERVICEMAIN_FLOWINUSE                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:DIST:HIGHSERVICEMAIN_FLOWLOWRANGE                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:DIST:HIGHSERVICEMAIN_PRESSURE                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:DIST:HighServiceContact_TimeRatio                             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump1_3PhaseReceivedEnergy                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump1_3PhaseWatts_PhaseWatts                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump1_Frequency_X100                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump1_PhaseABKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump1_PhaseACurrent_ACurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump1_PhaseBCKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump1_PhaseBCurrent_BCurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump1_PhaseCAKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump1_PhaseCCurrent_CCurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump1_TruePowerFactor_PowerFactor             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump2_3PhaseWatts_PhaseWatts                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump2_Frequency_X100                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump2_PhaseABKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump2_PhaseACurrent_ACurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump2_PhaseBCKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump2_PhaseBCurrent_BCurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump2_PhaseCAKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump2_PhaseCCurrent_CCurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump2_ReceivedEnergy                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump2_TruePowerFactor_PowerFactor             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump3_3PhaseWatts_PhaseWatts                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump3_Frequency_X100                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump3_HighServicePump3_PhaseABKilovolts100    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump3_PhaseACurrent_ACurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump3_PhaseBCKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump3_PhaseBCurrent_BCurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump3_PhaseCAKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump3_PhaseCCurrent_CCurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump3_ReceivedEnergy                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump3_Speed                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump3_TruePowerFactor_PowerFactor             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump4_3PhaseWatts_PhaseWatts                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump4_Frequency_X100                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump4_PhaseABKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump4_PhaseACurrent_ACurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump4_PhaseBCKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump4_PhaseBCurrent_BCurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump4_PhaseCAKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump4_PhaseCCurrent_CCurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump4_ReceivedEnergy                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump4_Speed                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump4_TruePowerFactor_PowerFactor             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump5_3PhaseWatts_PhaseWatts                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump5_Frequency_X100                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump5_PhaseABKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump5_PhaseACurrent_ACurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump5_PhaseBCKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump5_PhaseBCurrent_BCurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump5_PhaseCAKilovolts100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump5_PhaseCCurrent_CCurrent                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump5_ReceivedEnergy                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:HighServicePump5_TruePowerFactor_PowerFactor             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:MAINHISERV_Flow                                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:MAINHISERV_FlowInUse                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:MAINHISERV_FlowLowRange                                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:MAINHISERV_Pressure                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:DIST:PLANTGAS_FLOW                                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:DIST:PLANTGAS_Flow                                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:EFFL:FINISHEDWATER_CL2Residual                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:EFFL:FINISHEDWATER_FlowRATE                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:EFFL:FINISHEDWATER_PHLevel                                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:EFFL:FINISHEDWATER_Phosphate                                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:EFFL:FinishedH2OFree_CL2Residual                              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:EFFL:FinishedH2O_PH                                           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:EFFL:FinishedH2O_Turbidity                                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:EFFL:PLANT_FLOWRATE                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:EFFL:PLANT_PREVIOSDAYFLOWTOTAL                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:EFFL:Plant_FlowRate                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:EFFL:Plant_PreviosDayFlowTotal                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:EFFL:TOCFILTERED_Concentration                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:AIDPOLYMERDAYTANK_LEVEL                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASCLARIFIER1_LEVEL                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASCLARIFIER2_LEVEL                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASHAIR_FLOW                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASHAIR_Flow                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASHCLARIFIER_LEVEL                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASHCLARIFIER_Level                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASHPUMP1_Running                                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASHPUMP1_STATUS                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASHPUMP2_Running                                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASHPUMP2_STATUS                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASHSETPOINT_FLOW                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASHSetpoint_FlowSetpoint                            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASHVALVE_POSITION                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASHValve_Position                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASH_TURBIDITY                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BCKWSHCLARIFIER1_Level                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:BCKWSHCLARIFIER2_Level                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:COMBINEDFILTER_TURBIDITY                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1Bed_Level                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_BEDLASTWASHMAX                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_BEDLASTWASHMIN                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_BEDLEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_BEDLEVELGROWTHPERCENT                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_BEDLEVELLASTGROWTHPERCENT                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_BEDLEVELMAX                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_BEDLEVELMIN                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_EFFLUENTFLOW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_EffluentFlow                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_HEADLOSS                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_INFLUENTTURBIDITY                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_InfluentTurbidity                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_TURBIDITY                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_TURBIDITYRAW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER1_TurbidityRaw                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2Bed_Level                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_BEDLASTWASHMAX                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_BEDLASTWASHMIN                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_BEDLEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_BEDLEVELGROWTHPERCENT                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_BEDLEVELLASTGROWTHPERCENT                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_BEDLEVELMAX                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_BEDLEVELMIN                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_EFFLUENTFLOW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_EffluentFlow                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_HEADLOSS                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_INFLUENTTURBIDITY                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_InfluentTurbidity                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_TURBIDITY                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_TURBIDITYRAW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER2_TurbidityRaw                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3Bed_Level                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_BEDLASTWASHMAX                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_BEDLASTWASHMIN                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_BEDLEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_BEDLEVELGROWTHPERCENT                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_BEDLEVELLASTGROWTHPERCENT                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_BEDLEVELMAX                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_BEDLEVELMIN                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_EFFLUENT                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_EFFLUENTFLOW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_HEADLOSS                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_INFLUENTTURBIDITY                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_InfluentTurbidity                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_TURBIDITY                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER3_TURBIDITYRAW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4Bed_Level                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_BEDLASTWASHMAX                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_BEDLASTWASHMIN                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_BEDLEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_BEDLEVELGROWTHPERCENT                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_BEDLEVELLASTGROWTHPERCENT                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_BEDLEVELMAX                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_BEDLEVELMIN                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_EFFLUENT                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_EFFLUENTFLOW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_HEADLOSS                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_INFLUENTTURBIDITY                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_InfluentTurbidity                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_TURBIDITY                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER4_TURBIDITYRAW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5Bed_Level                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_BEDLASTWASHMAX                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_BEDLASTWASHMIN                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_BEDLEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_BEDLEVELGROWTHPERCENT                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_BEDLEVELLASTGROWTHPERCENT                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_BEDLEVELMAX                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_EFFLUENTFLOW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_EffluentFlow                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_HEADLOSS                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_INFLUENTTURBIDITY                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_InfluentTurbidity                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_TURBIDITYRAW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_TurbidityRaw                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6Bed_Level                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_BEDLEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_EFFLUENTFLOW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_EffluentFlow                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_HEADLOSS                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_INFLUENTTURBIDITY                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_InfluentTurbidity                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_TURBIDITYRAW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_TurbidityRaw                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7Bed_Level                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_BEDLEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_EFFLUENTFLOW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_EffluentFlow                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_HEADLOSS                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_INFLUENTTURBIDITY                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_InfluentTurbidity                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_TURBIDITYRAW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_TurbidityRaw                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8Bed_Level                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_BEDLEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_EFFLUENTFLOW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_EffluentFlow                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_HEADLOSS                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_INFLUENTTURBIDITY                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_InfluentTurbidity                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_TURBIDITYRAW                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_TurbidityRaw                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTERAID_VOLUMEUSAGE                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTEREDWATER_FLOW                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTEREDWATER_FlowPV                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTEREDWATER_TEMPERATURE                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTEREDWATER_TOC                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTEREDWATER_Temperature                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FINISHEDWATER_FREECHLORINERESIDUAL                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FLTRINFLUENTCHAN_Level                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:INFLUENTCHANNEL_LEVEL                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:POSTFILTRATION_CHLORINERESIDUAL                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:POSTFILTRATION_PH                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:TOTALFILTER_FLOW                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:TOTALFILTER_Flow                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:WASHWATER_FLOW                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:WASHWATER_Flow                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:CLEARWELL1_LEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:CLEARWELL2_LEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:FINISHEDWATER_CHLORINERESIDUAL                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:FINISHEDWATER_FLOWRATE                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:FINISHEDWATER_PH                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:FINISHEDWATER_PHOSPHATE                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:FINISHEDWATER_TURBIDITY                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICECONTACT_TIMERATIO                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_3PHASEDELIVEREDENERGY                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_3PHASERECEIVEDENERGY                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_3PHASEWATTS                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_FREQUENCY                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_PHASEABKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_PHASEACURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_PHASEBCKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_PHASEBCURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_PHASECAKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_PHASECCURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_TRUEPOWERFACTOR                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_3PHASEWATTS                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_DELIVEREDENERGY                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_FREQUENCY                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_PHASEABKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_PHASEACURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_PHASEBCKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_PHASEBCURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_PHASECAKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_PHASECCURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_RECEIVEDENERGY                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_TRUEPOWERFACTOR                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_3PHASEWATTS                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_DELIVEREDENERGY                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_FREQUENCY                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_HIGHSERVICEPUMP3                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_PHASEACURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_PHASEBCKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_PHASEBCURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_PHASECAKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_PHASECCURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_RECEIVEDENERGY                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_SPEED                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_TRUEPOWERFACTOR                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_3PHASEWATTS                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_DELIVEREDENERGY                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_FREQUENCY                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_PHASEABKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_PHASEACURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_PHASEBCKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_PHASEBCURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_PHASECAKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_PHASECCURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_RECEIVEDENERGY                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_SPEED                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_TRUEPOWERFACTOR                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_3PHASEWATTS                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_DELIVEREDENERGY                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_FREQUENCY                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_PHASEABKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_PHASEACURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_PHASEBCKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_PHASEBCURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_PHASECAKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_PHASECCURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_RECEIVEDENERGY                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_TRUEPOWERFACTOR                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_3PHASEWATTS                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_DELIVEREDENERGY                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_FREQUENCY                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_PHASEABKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_PHASEACURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_PHASEBCKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_PHASEBCURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_PHASECAKILOVOLTS100                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_PHASECCURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_RECEIVEDENERGY                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_TRUEPOWERFACTOR                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:MIXINGEQUALTK1_LEVEL                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:MIXINGEQUALTK2_LEVEL                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:WETWELL2_LEVEL                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:WETWELL3_LEVEL                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FLOC:DILUTIONSYSTEMWATER_Flow                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FLOC:GRAVITYTHICKENER_Level                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:HYPO:BRINETANKXMITTERA_LEVEL                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:BRINETANKXMITTERB_LEVEL                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:BRINETANKXMITTERC_LEVEL                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:BRINETANK_PREVIOUSDAYUSE                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:BRINETANK_SALTLEVEL                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:BRINETANK_WATERLEVEL                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:BULKTANK1_VOLUME                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:BULKTANK2_VOLUME                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:BULKTANKS_USAGE                                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:HYPO:BULKTANKS_VOLUME                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:DILUTETANK1_VOLUME                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:DILUTETANK2_FEEDRATE                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:DILUTETANKS_TOTALVOLUME                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:DILUTETANKS_USAGE                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:DILUTETANKS_USAGEPREVIOUSDAY                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:FINISHEDWATERXFER_FLOW                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:GENERATOR1_CONDUCTIVITY                                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:HYPO:GENERATOR1_CURRENT                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:GENERATOR1_VOLTAGE                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:GENERATORCELL1_CONDUCTIVITY                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:GENERATORCELL2_CONDUCTIVITY                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:GENERATOR_STATUS                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:GENROOMHYDROGAS1_LEVEL                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:GENROOMHYDROGAS2_LEVEL                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:GENTANK1_LEVEL                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:GENTANK2_LEVEL                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:POSTTREATMENTXFER_FLOW                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PRETREATMENTXFER_FLOW                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP1_SPEEDCOMMAND                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP1_SPEEDPV                                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP1_STATUS                                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP2_SPEEDCOMMAND                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP2_SPEEDPV                                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP2_STATUS                                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP3_SPEEDCOMMAND                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP3_SPEEDPV                                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP3_STATUS                                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP4_SPEED                                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP4_SPEEDCOMMAND                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP4_STATUS                                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP5_SPEED                                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP5_SPEEDCOMMAND                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:PUMP5_STATUS                                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:TOTALSYSTEM_COMMAND                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:TOTALSYSTEM_FLOWRATE                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:TOTALSYSTEM_USAGE                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:HYPO:XFERPUMP1_STATUS                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:HYPO:XFERPUMP2_STATUS                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:FUELTANK_LEVEL                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:INFLUENTWQA_CONDUCTIVITY                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:INFLUENTWQA_DISSOLVEDOXYGEN                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:INFLUENTWQA_NH3                                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:INFLUENTWQA_ORP                                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:INFLUENTWQA_PAH                                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:INFLUENTWQA_PH                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:INFLUENTWQA_TEMPERATURE                                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:INFLUENTWQA_TURBIDITY                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:INFLUENTWQA_UV                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:INFLUENT_FLOWRATE                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:InfluentWQA_Conductivity                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:InfluentWQA_DissolvedOxygen                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:InfluentWQA_NH3                                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:InfluentWQA_ORP                                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:InfluentWQA_PAH                                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:InfluentWQA_Ph_Temp                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:InfluentWQA_Temp                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:InfluentWQA_Turbidity                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:InfluentWQA_UV                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:InfluentWQA_pH                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:KMNO4_RESIDUAL                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:PLANTINLET_FLOW                                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:PLANTINLET_PH                                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:PLANTINLET_TUBIDITY                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:PLANTINLET_Tubidity                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:PlantInfluent_FlowRATE                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:RAWH2OFCV_Position                                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:RAWH2ORESERVOIR_Level                                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:RAWWATERFCV_POSITION                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:RAWWATER_CHLORINERESIDUAL                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:RAWWATER_CONDUCTIVITY                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:RAWWATER_FLOW                                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:RAWWATER_Flow                                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:RAWWATER_PH                                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:RAWWATER_TURBIDITY                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:RESFLOWTO_Press1                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:RESFLOWTO_Press2                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:RESFLOWTO_Press3                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:RIVER_LEVEL                                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:RWSODHYPOSTGTK2_VOLUME                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:RawWater_ConductivityLevel                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:RawWater_PHLevel                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:RawWater_TurbidityLevel                                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:SODHYPOSTGTK1_LEVEL                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:WETWELL_Level2                                           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:WETWELL_Level3                                           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:WeatherMonitor_OutdoorTemperature                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:WeatherMonitor_WindDirection                             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:WeatherMonitor_WindSpeed                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:WeatherVane_Rainfall                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:WeatherVane_Temperature                                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:WeatherVane_WindDirection                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:INTK:WeatherVane_WindSpeed                                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:LWLFT:LLPSWETWELL1_Level                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:LWLFT:LLPSWETWELL2_Level                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:LWLFT:SETTLEDWATER_Tubidity                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:LWLFT:TOCINLET_Concentration                                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR1_3PHASEWATTS                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR1_DELIVEREDENERGY                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR1_FREQUENCYX100                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR1_PHASEABKV100                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR1_PHASEACURRENT                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR1_PHASEBCKV100                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR1_PHASEBCURRENT                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR1_PHASECAKV100                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR1_PHASECCURRENT                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR1_RECEIVEDENERGY                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR1_TRUEPOWERFACTOR                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR2_3PHASEWATTS                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR2_DELIVEREDENERGY                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR2_FREQUENCYX100                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR2_PHASEABKV100                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR2_PHASEACURRENT                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR2_PHASEBCKV100                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR2_PHASEBCURRENT                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR2_PHASECAKV100                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR2_PHASECCURRENT                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR2_RECEIVEDENERGY                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:BACKGENERATOR2_TRUEPOWERFACTOR                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:DIESELFUELTANK1_VOLUME                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:DIESELFUELTANK2_VOLUME                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONECONTACTOR1_PRESSURE                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONECONTACTOR1_RESIDUAL                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONECONTACTOR2_PRESSURE                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONECONTACTOR2_RESIDUAL                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONECONTACTORVENT_GAS                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONEDESTRUCTORMETER_AMBIENTOXYGEN                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONEDESTRUCTORMETER_AMBIENTOZONE                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONEGEN1GAS_FLOW                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONEGEN2GAS_FLOW                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONEGEN3GAS_FLOW                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONEGEN4GAS_FLOW                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONEMAINLINEAVALVE_POSITION                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONEMAINLINEA_FLOWRATE                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONEMAINLINEBVALVE_POSITION                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONEMAINLINEB_FLOWRATE                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:OZON:OZONEOFF_GASCONCENTRATION                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PACA:PACECHLORINATOR_PERCENTAGE                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:PACA:PACPLANTMETER_H2O                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:PACA:PACPUMP_FEEDRATE                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:PACA:PACSLURRYTK1_LEVEL                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:PACA:PACSLURRYTK2_LEVEL                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:PACA:PACSOLUTIONMETER_H2O                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:PACA:PACTANK_FEEDRATE                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:PACA:PAC_VOLUME                                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:POST:Chlorine_ContactTime                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPOBLKTNKS_Volume                                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPOBULKTANK1_Volume                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPOBULKTANK2_Volume                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPOBULKTANKS_Volume                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPODILUTETANK1_Volume                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPODILUTETANK2_FeedRate                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPODILUTETANKS_Usage                                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPODILUTETANKS_UsagePreviousDay                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPODILUTETANK_TotalVolume                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPOGEN1_CURRENT                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPOGEN1_VOLTAGE                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPOPUMP2_SpeedCommand                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPOPUMP2_SpeedPV                                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPOPUMP5_SPEED                                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPOXFERPUMP_Pump1                                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPOXFERPUMP_Pump2                                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPO_TotalCommand                                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPO_TotalFlowRate                                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HYPO_TotalUsage                                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK1_3PhaseWatts                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK1_DeliveredEnergy                            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK1_FrequencyX100                              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK1_PhaseABKV100                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK1_PhaseACurrent_Phase                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK1_PhaseBCKV100                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK1_PhaseCAKV100                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK1_PhaseCCurrent_Phase                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK1_TruePowerFactor_TruePower                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK2_3PhaseWatts                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK2_DeliveredEnergy                            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK2_FrequencyX100                              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK2_PhaseABKV100                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK2_PhaseACurrent_Phase                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK2_PhaseBCKV100                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK2_PhaseCAKV100                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK2_PhaseCCurrent_Phase                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenFeedK2_TruePowerFactor_TRUE                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenRoomHydroGas1_Level                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenRoomHydroGas2_Level                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:HypoGenerator_Status                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:Hypo_FlowToPostTreatment                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:Hypo_FlowToPreTreatment                                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:MIXINGEQUALTK1_Level                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:MIXINGEQUALTK2_Level                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:POSTTREATMENT_CL2Residual                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:POSTTREATMENT_PHLevel                                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:PostTreamentFree_CL2Rsdl1                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:POST:PostTreament_PH                                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:BLANKETPOLYMERPUMP_FEEDRATE                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:BLANKETPOLYMERTANK_LEVEL                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:BLANKETPOLYMER_FEEDRATE                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:BRINETANK_LEVELFROMXMITTERB                              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:BRINETANK_LEVELFROMXMITTERC                              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:BRINETANK_LevelFROMXMITTERA                              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:BRINETANK_SaltLEVEL                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:BRINETANK_UsagePreviousDay                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:BRINETANK_WaterLEVEL                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:BlanketPolymerPump_FeedRate                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:BlanketPolymerTank_Level                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:BlanketPolymer_FeedRate                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSDAYTNKMIDNIGHT_MidnightLVL                           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICBULKTANK_LEVEL                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICDAYTANK_FEEDRATE                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICDAYTANK_LEVEL                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICDAYTNK_MIDNIGHTLVL                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICPUMP1PV_SPEED                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICPUMP1_DOSAGE                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICPUMP1_STATUS                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICPUMP2PV_SPEED                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICPUMP2_DOSAGE                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICPUMP2_STATUS                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICPUMP_FEEDRATE                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICSTGTK1_LEVEL                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICTANK_FEEDRATE                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICTANK_LEVEL                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTICXFERPUMP_STATUS                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CAUSTIC_USAGE                                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:COAGAIDPOLYDYTK_Level                                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:COAGAIDPOLYMERTANK_LEVEL                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:COAGPUMP_FEEDRATE                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:COAGTANK_FEEDRATE                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:COAGTANK_LEVEL                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:CORRINHIBDAYTK_Level                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:CORRINHIBSTGTK_Level                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:ChemicalWasteTank_Volume                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:CoagulantPump_FeedRate                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:CoagulantTank_FeedRate                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:CoagulantTank_Level                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:CorrosionInhibiterPumpRate_FeedRate                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:CorrosionInhibiterTankRate_FeedRate                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:CorrosionInhibiterTank_Level                             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:FERCHLODAYTK1_Level                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:FERCHLODAYTK2_Level                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:FERCHLOSTGTK1_Level                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:FERCHLOSTGTK2_Level                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:FERCHLOSTGTK3_Level                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:FERCHLOSTGTK4_Level                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:FERCHLOSTGTK5_Level                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:FERRICCHLODAYTANK1_LEVEL                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:FERRICCHLODAYTANK2_LEVEL                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:FERRICCHLOPUMP_FEEDRATE                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:FERRICCHLOSTORAGETANK1_LEVEL                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:FERRICCHLOSTORAGETANK2_LEVEL                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:FERRICCHLOSTORAGETANK3_LEVEL                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:FERRICCHLOSTORAGETANK4_LEVEL                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:FERRICCHLOSTORAGETANK5_LEVEL                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:FERRICCHLOTANK_FEEDRATE                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:FERRICCHLOTANK_VOLUME                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:FerricPump_FeedRate                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:FerricTank_FeedRate                                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:FerricTank_Volume                                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:KMNO4SLURRYTK1_LEVEL                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:KMNO4SLURRYTK1_Level                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:KMNO4SLURRYTK2_LEVEL                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:KMNO4SLURRYTK2_Level                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:KMNO4_RESIDUAL                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LIMECOLDWATER_TEMPERATURE                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LIMEDILUTIONTANK2_FLOW                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LIMEPUMPRATE_FEEDRATE                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LIMESILO1_LEVEL                                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LIMESILO2_LEVEL                                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LIMESILOAVERAGE_LEVEL                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LIMESLURRYTK1_LEVEL                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LIMESLURRYTK2_LEVEL                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LIMETANKRATE_FEEDRATE                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LIME_VOLUME                                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LOX_Pressure                                             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:LimeColdWater_Temperature                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LimeSilo1_Level                                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LimeSilo2_Level                                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LimeSiloAverage_Level                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:LimeSlaker_Temperature                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OZONECONTACTOR1_Pressure                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OZONECONTACTOR1_Residual                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OZONECONTACTOR2_Pressure                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OZONECONTACTOR2_Residual                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OZONECONTACTORVENT_Gas                                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OZONEDESTRUCTRM_AmbientOxygen                            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OZONEDESTRUCTRM_AmbientOzone                             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OZONEGEN1GAS_Flow                                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OZONEGEN2GAS_Flow                                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OZONEGEN3GAS_Flow                                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OZONEGEN4GAS_Flow                                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OZONEOFF_GasConcentration                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OzoneMainLineAValve_Position                             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:OzoneMainLineA_FlowRate                                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:PACSLURRYTK1_Level                                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:PACSLURRYTK2_Level                                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:PAC_Volume                                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:PERMANGANATEPUMP_FEEDRATE                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:PERMANGANATETANK_FEEDRATE                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:PERMANGANATE_VOLUME                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:PRETREATMENT_PH                                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:PermanganatePump_FeedRate                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:PermanganateTank_FeedRate                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:Permanganate_Volume                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:PlantInlet_Flow                                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:SILO_PERCENTACTIVECAO                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERCAOH2_WEIGHTCALCULATED                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERCAOH2_WEIGHTLIVE                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERCAOH2_WeightCALCULATED                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERDILUTIONWATER_WEIGHTCALC                           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERDILUTIONWATER_WEIGHTCALCULATED                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERDILUTIONWATER_WEIGHTLIVE                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERLIME_TEMPERATURE                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERLIME_USAGE                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERLIME_USEDFROMSILOSINCE                             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERLIME_WEIGHTCALCULATED                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERLIME_WEIGHTLIVE                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERLIME_WeightLIVE                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERSCALE_BUILDUPWEIGHT                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERSCALE_BuildupWEIGHT                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERSLAKINGWATER_WEIGHTCALCULATED                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERSLAKINGWATER_WEIGHTLIVE                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERTAREDVOLUMEF_VOLUME                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERTAREDVOLUMEF_Volume(F_CV)                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERWATER_RATIO                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKERWATER_RATIOCALCULATE                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_PERCENTCONCENTRATION                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_PERCENTCONCENTRATIONSETPOINT                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_PERCENTTOTALVOLUME                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_PercentCONCENTRATION                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_PercentTOTALVOLUME                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_SETPOINTFORCURRENTBATCH                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_TAREDVOLUME                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_TOTALLIMEPRODUCED                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_TOTALTAREDWEIGHT                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_TOTALWATERWEIGHT                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_TOTALWATERWEIGHTLEVEL                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_TOTALWATERWaterWEIGHT                             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_TOTALWATERWaterWEIGHTLevel                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:SLAKER_TotalTaredWEIGHT                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLDBLNKDYTK_Level                                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:SLUDGEBLANKETDAYTANK_LEVEL                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLURRYTANK_PERCENTTOTALVOLUME                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLURRYTANK_TAREDWEIGHT                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLURRYTANK_TaredWEIGHT                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SLURRYTANK_VOLUME                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:STREAMING_CURRENT1                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:STREAMING_CURRENT2                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:STREAMING_Current1                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:STREAMING_Current2                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:SlurryTank_VolumeGal                                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:THCKNRRESIDHOLDTK1_Level                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:THCKNRRESIDHOLDTK2_Level                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:PRET:TRAIN1_PH                                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:PRET:Train1_PH                                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:INLET_TOC                                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:LLPSWETWELL1_LEVEL                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:LLPSWETWELL2_LEVEL                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:RAWWATER_LEVEL                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:RAWWATER_TOC                                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:RESFLOWTO_PRESS1                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:RESFLOWTO_PRESS2                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:RESFLOWTO_PRESS3                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:SETTLEDWATER_TUBIDITY                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:SLDS:GRAVITYTHICKENER_LEVEL                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:SLDS:RESIDUALSOLIDSHOLDTANK1_LEVEL                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:SLDS:RESIDUALSOLIDSHOLDTANK2_LEVEL                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:STOR:CLEARWELL1_Level                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:STOR:CLEARWELL2_Level                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:STOR:Contact_TimeRatio                                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:SUPP:DILUTESYSTEM_FLOW                                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:SUPP:DILUTIONSYSTEMWATER_FLOW                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:SUPP:LIQUIDOXYGENSTORETANK_LEVEL                              EXISTS         - in Excel
+NJ:WA:SW:DRTP:WAST:CHEMICALWASTETANK_VOLUME                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:WEAT:WEATHERMONITOR_OUTDOORTEMPERATURE                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:WEAT:WEATHERMONITOR_WINDDIRECTION                             EXISTS         - in Excel
+NJ:WA:SW:DRTP:WEAT:WEATHERMONITOR_WINDSPEED                                 EXISTS         - in Excel
+NJ:WA:SW:DRTP:WEAT:WEATHERVANE_RAINFALL                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:WEAT:WEATHERVANE_TEMPERATURE                                  EXISTS         - in Excel
+NJ:WA:SW:DRTP:WEAT:WEATHERVANE_WINDDIRECTION                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:WEAT:WEATHERVANE_WINDSPEED                                    EXISTS         - in Excel
+NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_COND                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_DO                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_DOC                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_DO_TEMP                            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_ORP                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_PH                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_PH_TEMP                            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_COND                              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_COND_TEMP                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_DO                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_DO_TEMP                           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_ORP                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_ORP_TEMP                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_PAH                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_PH                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_PH_TEMP                           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_TURB                              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_1_1_trichloroethane          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_1_2_2_Tetrachlane            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_1_2_2_Tetrachloroethane      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_1_2_trichloroethane          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_1_dichloroethane             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_1_dichloroethene             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_2_chlorobenzene              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_2_dichlorobenzene            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_2_dichloropropane            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_3_chlorobenzene              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_3_dichlorobenzene            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_4_chlorobenzene              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_4_dichlorobenzene            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_1_chloro_2_flourobenzene       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_ArgonPress                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Benzene_1_2_dichloroethan      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Bromodichloromethane           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Bromoform                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Bromomethane                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Carbontetrachloride            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Chlorobenzene                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Chloroform                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Cis_1_3_dichloropropene        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Dibromochloromethane           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Entries                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Ethylbenzene                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Hexachloro_1_3_butadiene       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_MethyleneChloride              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Styrene                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Tetrachloroethene              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Toluene                        DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Trans_1_2_dichloroethene       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Trans_1_3_dichloropropene      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Trichloroethene                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Trichloroflourmethane          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_Trichlorofluoromethane         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_WaterTemp                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_FPDetectorType                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_FPSource                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_NH4                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_NO2                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_NO3                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_PH                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_SPECALM                           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_SPECALM_BTX                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_TEMP                              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_TOC                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_TURB                              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_UV                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength0                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength1                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength10                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength100                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength101                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength102                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength103                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength104                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength105                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength106                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength107                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength108                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength109                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength11                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength110                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength111                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength112                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength113                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength114                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength115                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength116                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength117                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength118                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength119                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength12                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength120                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength121                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength122                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength123                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength124                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength125                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength126                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength127                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength128                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength129                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength13                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength130                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength131                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength132                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength133                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength134                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength135                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength136                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength137                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength138                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength139                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength14                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength140                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength141                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength142                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength143                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength144                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength145                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength146                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength147                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength148                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength149                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength15                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength150                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength151                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength152                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength153                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength154                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength155                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength156                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength157                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength158                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength159                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength16                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength160                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength161                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength162                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength163                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength164                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength165                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength166                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength167                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength168                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength169                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength17                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength170                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength171                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength172                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength173                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength174                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength175                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength176                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength177                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength178                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength179                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength18                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength180                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength181                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength182                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength183                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength184                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength185                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength186                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength187                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength188                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength189                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength19                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength190                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength191                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength192                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength193                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength194                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength195                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength196                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength197                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength198                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength199                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength2                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength20                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength200                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength21                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength22                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength23                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength24                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength25                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength26                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength27                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength28                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength29                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength3                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength30                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength31                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength32                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength33                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength34                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength35                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength36                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength37                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength38                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength39                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength4                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength40                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength41                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength42                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength43                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength44                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength45                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength46                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength47                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength48                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength49                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength5                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength50                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength51                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength52                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength53                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength54                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength55                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength56                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength57                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength58                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength59                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength6                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength60                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength61                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength62                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength63                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength64                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength65                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength66                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength67                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength68                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength69                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength7                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength70                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength71                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength72                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength73                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength74                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength75                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength76                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength77                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength78                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength79                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength8                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength80                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength81                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength82                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength83                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength84                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength85                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength86                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength87                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength88                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength89                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength9                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength90                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength91                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength92                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength93                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength94                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength95                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength96                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength97                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength98                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength99                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_uiMPath                           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_BGA_PC1                            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_BGA_PC2                            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Battery                            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Chlorophyll1                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Chlorophyll2                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Conductivity1                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Conductivity2                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Date                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_ExternalPower                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_FDOM1                              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_FDOM2                              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_ORP                                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_PH                                 DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_PhVoltage                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Salinity                           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_SpecificConductance1               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_SpecificConductance2               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_TDS1                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_TDS2                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_TDS3                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Time                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_WaterTemp                          DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_WiperCurrent                       DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_WiperPosition                      DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_BOD                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_COD                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_CellTemperature                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_Clean                             DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_ColorTrue                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_CurrentMachineState               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_DrainValvePosition                DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_E_Coli                            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_FDOM                              DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_FaultCode                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_LastSampleDay                     DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_LastSampleHour                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_LastSampleMachineState            DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_LastSampleMinute                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_LastSampleMonth                   DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_LastSampleSecond                  DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_LastSampleUtcOffset               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_LastSampleYear                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_Nitrate                           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_PmIndex                           DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_SamplePressure                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_TKN                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_TOC                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_TSS                               DOESNOT EXISTS - in Excel
+NJ:WA:SW:DWTP:RWPS:ZapsFrankenInfluentWQA_UVA                               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_COND                         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_DO                           DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_DOC                          DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_DO_TEMP                      DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_ORP                          DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_PH                           DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:AbbFrankenInfluentWQA_PH_TEMP                      DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_COND                        DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_COND_TEMP                   DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_DO                          DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_DO_TEMP                     DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_ORP                         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_ORP_TEMP                    DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_PAH                         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_PH                          DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_PH_TEMP                     DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:HachFrankenInfluentWQA_TURB                        DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_ArgonPress               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:InficonFrankenInfluentWQA_WaterTemp                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_NH4                         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_NO2                         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_NO3                         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_PH                          DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_SPECALM                     DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_TEMP                        DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_TOC                         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_TURB                        DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_UV                          DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength0                 DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength1                 DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength10                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength100               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength101               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength102               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength103               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength104               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength105               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength106               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength107               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength108               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength109               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength11                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength110               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength111               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength112               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength113               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength114               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength115               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength116               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength117               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength118               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength119               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength12                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength120               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength121               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength122               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength123               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength124               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength125               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength126               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength127               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength128               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength129               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength13                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength130               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength131               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength132               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength133               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength134               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength135               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength136               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength137               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength138               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength139               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength14                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength140               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength141               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength142               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength143               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength144               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength145               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength146               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength147               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength148               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength149               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength15                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength150               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength151               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength152               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength153               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength154               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength155               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength156               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength157               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength158               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength159               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength16                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength160               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength161               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength162               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength163               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength164               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength165               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength166               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength167               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength168               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength169               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength17                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength170               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength171               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength172               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength173               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength174               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength175               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength176               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength177               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength178               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength179               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength18                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength180               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength181               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength182               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength183               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength184               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength185               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength186               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength187               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength188               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength189               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength19                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength190               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength191               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength192               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength193               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength194               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength195               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength196               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength197               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength198               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength199               DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength2                 DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength20                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength21                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength22                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength23                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength24                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength25                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength26                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength27                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength28                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength29                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength3                 DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength30                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength31                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength32                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength33                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength34                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength35                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength36                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength37                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength38                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength39                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength4                 DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength40                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength41                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength42                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength43                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength44                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength45                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength46                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength47                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength48                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength49                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength5                 DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength50                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength51                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength52                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength53                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength54                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength55                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength56                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength57                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength58                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength59                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength6                 DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength60                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength61                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength62                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength63                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength64                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength65                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength66                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength67                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength68                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength69                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength7                 DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength70                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength71                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength72                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength73                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength74                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength75                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength76                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength77                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength78                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength79                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength8                 DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength80                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength81                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength82                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength83                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength84                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength85                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength86                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength87                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength88                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength89                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength9                 DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength90                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength91                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength92                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength93                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength94                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength95                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength96                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength97                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength98                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:ScanFrankenInfluentWQA_Wavelength99                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_BGA_PC1                      DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_BGA_PC2                      DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Battery                      DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Chlorophyll1                 DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Chlorophyll2                 DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Conductivity1                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Conductivity2                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Date                         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_ExternalPower                DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_FDOM1                        DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_FDOM2                        DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_ORP                          DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_PH                           DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_PhVoltage                    DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Salinity                     DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_SpecificConductance1         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_SpecificConductance2         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_TDS1                         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_TDS2                         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_TDS3                         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Time                         DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_WaterTemp                    DOESNOT EXISTS - in Excel
+Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_WiperPosition                DOESNOT EXISTS - in Excel
+
+Tag Exist Count : 469
+Tag Doesnot Exists Count : 802

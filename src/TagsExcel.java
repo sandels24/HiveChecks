@@ -1,18 +1,28 @@
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Connection;
-import org.apache.poi.ss.usermodel.*;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Scanner;
+import java.util.Set;
 
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+/**
+ * 
+ * @author SANDELS
+ * Tells about comparision of Hive database with the excelfile
+ * Uses ApachiPOI
+ *
+ */
 public class TagsExcel {
 
     private static final String FILE_NAME = "src/DelranTags.xlsx";
@@ -32,6 +42,7 @@ public class TagsExcel {
             	//System.out.println((++c)+". "+currentRow.getCell(0).getStringCellValue());
             }
         }
+		
 		
 		ArrayList<String> waterqualityTags = getTagsFromwaterquality(con);
 		
@@ -59,11 +70,15 @@ public class TagsExcel {
 		
 		Statement st = con.createStatement();
 		ArrayList<String> al = new ArrayList<>();
+		Set<String> waterqualityTagsSet = new HashSet<String>();
+
 		ResultSet res = st.executeQuery("select distinct "+c1+" from awinternal."+table+"");
 		while (res.next()) {
 			al.add(res.getString(1));
+			waterqualityTagsSet.add(res.getString(1));
 			//System.out.println(res.getString(1));
 		}
+		System.out.println("Count of Set"+waterqualityTagsSet.size()+" AL: "+ al.size());
 		con.close();
 		return al;
 	}

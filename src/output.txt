@@ -30,18 +30,19 @@ java.io.FileNotFoundException: Hadoop bin directory does not exist: C:\hadoop\bi
 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\sandels
 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.dir=C:\Users\sandels\Documents\workspace\HiveDataChecks
 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=staplhdpsm002.amwater.net:2181,staplhdpsm005.amwater.net:2181,staplhdpsm006.amwater.net:2181,staplhdpsm003.amwater.net:2181,staplhdpsm004.amwater.net:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@6d3af739
-[main-SendThread(10.3.22.12:2181)] WARN org.apache.zookeeper.ClientCnxn - SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: 'C:\programs\Hive\prod\jaas.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it.
-[main-SendThread(10.3.22.12:2181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server 10.3.22.12/10.3.22.12:2181
+[main-SendThread(10.3.22.14:2181)] WARN org.apache.zookeeper.ClientCnxn - SASL configuration failed: javax.security.auth.login.LoginException: No JAAS configuration section named 'Client' was found in specified JAAS configuration file: 'C:\programs\Hive\prod\jaas.conf'. Will continue connection to Zookeeper server without SASL authentication, if Zookeeper server allows it.
+[main-SendThread(10.3.22.14:2181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server 10.3.22.14/10.3.22.14:2181
 [main-EventThread] ERROR org.apache.curator.ConnectionState - Authentication failed
-[main-SendThread(10.3.22.12:2181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to 10.3.22.12/10.3.22.12:2181, initiating session
-[main-SendThread(10.3.22.12:2181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server 10.3.22.12/10.3.22.12:2181, sessionid = 0x266bed4de0c0082, negotiated timeout = 60000
+[main-SendThread(10.3.22.14:2181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to 10.3.22.14/10.3.22.14:2181, initiating session
+[main-SendThread(10.3.22.14:2181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server 10.3.22.14/10.3.22.14:2181, sessionid = 0x466bed5ddb90273, negotiated timeout = 60000
 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
-[main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x266bed4de0c0082 closed
+[main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x466bed5ddb90273 closed
 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
 [main] INFO org.apache.hive.jdbc.Utils - Resolved authority: staplhdpsm005.amwater.net:10001
 Connection Created
 Enter column name
 Enter table name
+Count of Set1322 AL: 1322
 CBRI_SONDE_CHLR                                                             DOESNOT EXISTS - in Excel
 CBRI_SONDE_COND                                                             DOESNOT EXISTS - in Excel
 CBRI_SONDE_DPTH                                                             DOESNOT EXISTS - in Excel
@@ -153,6 +154,7 @@ NJ:WA:SW:DRTP:FILT:BACKWASHSETPOINT_FLOW                                    EXIS
 NJ:WA:SW:DRTP:FILT:BACKWASHSetpoint_FlowSetpoint                            DOESNOT EXISTS - in Excel
 NJ:WA:SW:DRTP:FILT:BACKWASHVALVE_POSITION                                   EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:BACKWASHValve_Position                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:BACKWASH_FLOWPDAY                                        EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:BACKWASH_TURBIDITY                                       EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:BCKWSHCLARIFIER1_Level                                   DOESNOT EXISTS - in Excel
 NJ:WA:SW:DRTP:FILT:BCKWSHCLARIFIER2_Level                                   DOESNOT EXISTS - in Excel
@@ -226,38 +228,61 @@ NJ:WA:SW:DRTP:FILT:FILTER5_BEDLEVEL                                         EXIS
 NJ:WA:SW:DRTP:FILT:FILTER5_BEDLEVELGROWTHPERCENT                            EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER5_BEDLEVELLASTGROWTHPERCENT                        EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER5_BEDLEVELMAX                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_BEDLEVELMIN                                      EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER5_EFFLUENTFLOW                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER5_EffluentFlow                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER5_HEADLOSS                                         EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER5_INFLUENTTURBIDITY                                EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER5_InfluentTurbidity                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER5_TURBIDITY                                        EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER5_TURBIDITYRAW                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER5_TurbidityRaw                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER6Bed_Level                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_BEDLASTWASHMAX                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_BEDLASTWASHMIN                                   EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER6_BEDLEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_BEDLEVELGROWTHPERCENT                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_BEDLEVELLASTGROWTHPERCENT                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_BEDLEVELMAX                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_BEDLEVELMIN                                      EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER6_EFFLUENTFLOW                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER6_EffluentFlow                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER6_HEADLOSS                                         EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER6_INFLUENTTURBIDITY                                EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER6_InfluentTurbidity                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER6_TURBIDITY                                        EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER6_TURBIDITYRAW                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER6_TurbidityRaw                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER7Bed_Level                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_BEDLASTWASHMAX                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_BEDLASTWASHMIN                                   EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER7_BEDLEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_BEDLEVELGROWTHPERCENT                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_BEDLEVELLASTGROWTHPERCENT                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_BEDLEVELMAX                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_BEDLEVELMIN                                      EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER7_EFFLUENTFLOW                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER7_EffluentFlow                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER7_HEADLOSS                                         EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER7_INFLUENTTURBIDITY                                EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER7_InfluentTurbidity                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER7_TURBIDITY                                        EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER7_TURBIDITYRAW                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER7_TurbidityRaw                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER8Bed_Level                                         DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_BEDLASTWASHMAX                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_BEDLASTWASHMIN                                   EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER8_BEDLEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_BEDLEVELGROWTHPERCENT                            EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_BEDLEVELLASTGROWTHPERCENT                        EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_BEDLEVELMAX                                      EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_BEDLEVELMIN                                      EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER8_EFFLUENTFLOW                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER8_EffluentFlow                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER8_HEADLOSS                                         EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER8_INFLUENTTURBIDITY                                EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER8_InfluentTurbidity                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:FILT:FILTER8_TURBIDITY                                        EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER8_TURBIDITYRAW                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTER8_TurbidityRaw                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FILT:FILTERAID_VOLUMEUSAGE                                    EXISTS         - in Excel
@@ -277,6 +302,8 @@ NJ:WA:SW:DRTP:FILT:WASHWATER_FLOW                                           EXIS
 NJ:WA:SW:DRTP:FILT:WASHWATER_Flow                                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:CLEARWELL1_LEVEL                                         EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:CLEARWELL2_LEVEL                                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:CLEARWELLMAX_LEVEL                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:CLEARWELLMIN_LEVEL                                       EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:FINISHEDWATER_CHLORINERESIDUAL                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:FINISHEDWATER_FLOWRATE                                   EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:FINISHEDWATER_PH                                         EXISTS         - in Excel
@@ -293,6 +320,7 @@ NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_PHASEBCKILOVOLTS100                     EXIS
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_PHASEBCURRENT                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_PHASECAKILOVOLTS100                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_PHASECCURRENT                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_STATUS                                  EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP1_TRUEPOWERFACTOR                         EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_3PHASEWATTS                             EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_DELIVEREDENERGY                         EXISTS         - in Excel
@@ -304,6 +332,7 @@ NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_PHASEBCURRENT                           EXIS
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_PHASECAKILOVOLTS100                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_PHASECCURRENT                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_RECEIVEDENERGY                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_STATUS                                  EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP2_TRUEPOWERFACTOR                         EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_3PHASEWATTS                             EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_DELIVEREDENERGY                         EXISTS         - in Excel
@@ -316,6 +345,7 @@ NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_PHASECAKILOVOLTS100                     EXIS
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_PHASECCURRENT                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_RECEIVEDENERGY                          EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_SPEED                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_STATUS                                  EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP3_TRUEPOWERFACTOR                         EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_3PHASEWATTS                             EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_DELIVEREDENERGY                         EXISTS         - in Excel
@@ -328,6 +358,7 @@ NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_PHASECAKILOVOLTS100                     EXIS
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_PHASECCURRENT                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_RECEIVEDENERGY                          EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_SPEED                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_STATUS                                  EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP4_TRUEPOWERFACTOR                         EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_3PHASEWATTS                             EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_DELIVEREDENERGY                         EXISTS         - in Excel
@@ -339,6 +370,8 @@ NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_PHASEBCURRENT                           EXIS
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_PHASECAKILOVOLTS100                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_PHASECCURRENT                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_RECEIVEDENERGY                          EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_SPEED                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_STATUS                                  EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP5_TRUEPOWERFACTOR                         EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_3PHASEWATTS                             EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_DELIVEREDENERGY                         EXISTS         - in Excel
@@ -351,8 +384,12 @@ NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_PHASECAKILOVOLTS100                     EXIS
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_PHASECCURRENT                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_RECEIVEDENERGY                          EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:HIGHSERVICEPUMP6_TRUEPOWERFACTOR                         EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICESYSD_FLOWPERDAY                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:HIGHSERVICE_FLOWPERDAY                                   EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:MIXINGEQUALTK1_LEVEL                                     EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:MIXINGEQUALTK2_LEVEL                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:FIND:PLANTEFFLUENT_MAXFLOW                                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:FIND:PLANTEFFLUENT_MINFLOW                                    EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:WETWELL2_LEVEL                                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:FIND:WETWELL3_LEVEL                                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:FLOC:DILUTIONSYSTEMWATER_Flow                                 DOESNOT EXISTS - in Excel
@@ -427,6 +464,8 @@ NJ:WA:SW:DRTP:INTK:InfluentWQA_Turbidity                                    EXIS
 NJ:WA:SW:DRTP:INTK:InfluentWQA_UV                                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:INTK:InfluentWQA_pH                                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:INTK:KMNO4_RESIDUAL                                           EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:PLANTINFLUENT_MAXFLOW                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:INTK:PLANTINFLUENT_MINFLOW                                    EXISTS         - in Excel
 NJ:WA:SW:DRTP:INTK:PLANTINLET_FLOW                                          EXISTS         - in Excel
 NJ:WA:SW:DRTP:INTK:PLANTINLET_PH                                            EXISTS         - in Excel
 NJ:WA:SW:DRTP:INTK:PLANTINLET_TUBIDITY                                      EXISTS         - in Excel
@@ -459,6 +498,7 @@ NJ:WA:SW:DRTP:INTK:WeatherVane_Rainfall                                     DOES
 NJ:WA:SW:DRTP:INTK:WeatherVane_Temperature                                  DOESNOT EXISTS - in Excel
 NJ:WA:SW:DRTP:INTK:WeatherVane_WindDirection                                DOESNOT EXISTS - in Excel
 NJ:WA:SW:DRTP:INTK:WeatherVane_WindSpeed                                    DOESNOT EXISTS - in Excel
+NJ:WA:SW:DRTP:LIME:SLAKERLIME_USEDFROMSILO                                  DOESNOT EXISTS - in Excel
 NJ:WA:SW:DRTP:LWLFT:LLPSWETWELL1_Level                                      DOESNOT EXISTS - in Excel
 NJ:WA:SW:DRTP:LWLFT:LLPSWETWELL2_Level                                      DOESNOT EXISTS - in Excel
 NJ:WA:SW:DRTP:LWLFT:SETTLEDWATER_Tubidity                                   DOESNOT EXISTS - in Excel
@@ -487,6 +527,8 @@ NJ:WA:SW:DRTP:OPMA:BACKGENERATOR2_RECEIVEDENERGY                            EXIS
 NJ:WA:SW:DRTP:OPMA:BACKGENERATOR2_TRUEPOWERFACTOR                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:OPMA:DIESELFUELTANK1_VOLUME                                   EXISTS         - in Excel
 NJ:WA:SW:DRTP:OPMA:DIESELFUELTANK2_VOLUME                                   EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:DIESELGENERATOR_15MINPOWER                               EXISTS         - in Excel
+NJ:WA:SW:DRTP:OPMA:ELECTRICMETER_15MINDEMAND                                EXISTS         - in Excel
 NJ:WA:SW:DRTP:OZON:OZONECONTACTOR1_PRESSURE                                 EXISTS         - in Excel
 NJ:WA:SW:DRTP:OZON:OZONECONTACTOR1_RESIDUAL                                 EXISTS         - in Excel
 NJ:WA:SW:DRTP:OZON:OZONECONTACTOR2_PRESSURE                                 EXISTS         - in Excel
@@ -722,12 +764,22 @@ NJ:WA:SW:DRTP:PRET:Train1_PH                                                EXIS
 NJ:WA:SW:DRTP:RSVR:INLET_TOC                                                EXISTS         - in Excel
 NJ:WA:SW:DRTP:RSVR:LLPSWETWELL1_LEVEL                                       EXISTS         - in Excel
 NJ:WA:SW:DRTP:RSVR:LLPSWETWELL2_LEVEL                                       EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:LOWLIFTSYSD_FLOWPDAYTOTAL                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:RAWWATERPUMP1_PDAYRUNTIME                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:RAWWATERPUMP1_STATUS                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:RAWWATERPUMP2_PDAYRUNTIME                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:RAWWATERPUMP2_STATUS                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:RAWWATERPUMP3_STATUS                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:RAWWATERPUMP4_PDAYRUNTIME                                EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:RAWWATERPUMP4_STATUS                                     EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:RAWWATERSYSD_FLOWPDAYTOTAL                               EXISTS         - in Excel
 NJ:WA:SW:DRTP:RSVR:RAWWATER_LEVEL                                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:RSVR:RAWWATER_TOC                                             EXISTS         - in Excel
 NJ:WA:SW:DRTP:RSVR:RESFLOWTO_PRESS1                                         EXISTS         - in Excel
 NJ:WA:SW:DRTP:RSVR:RESFLOWTO_PRESS2                                         EXISTS         - in Excel
 NJ:WA:SW:DRTP:RSVR:RESFLOWTO_PRESS3                                         EXISTS         - in Excel
 NJ:WA:SW:DRTP:RSVR:SETTLEDWATER_TUBIDITY                                    EXISTS         - in Excel
+NJ:WA:SW:DRTP:RSVR:WASHWATER_FLOW                                           EXISTS         - in Excel
 NJ:WA:SW:DRTP:SLDS:GRAVITYTHICKENER_LEVEL                                   EXISTS         - in Excel
 NJ:WA:SW:DRTP:SLDS:RESIDUALSOLIDSHOLDTANK1_LEVEL                            EXISTS         - in Excel
 NJ:WA:SW:DRTP:SLDS:RESIDUALSOLIDSHOLDTANK2_LEVEL                            EXISTS         - in Excel
@@ -1314,5 +1366,5 @@ Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_Time                         DOES
 Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_WaterTemp                    DOESNOT EXISTS - in Excel
 Plant/NJ:WA:SW:DWTP:RWPS:YsiFrankenInfluentWQA_WiperPosition                DOESNOT EXISTS - in Excel
 
-Tag Exist Count : 469
-Tag Doesnot Exists Count : 802
+Tag Exist Count : 518
+Tag Doesnot Exists Count : 804
